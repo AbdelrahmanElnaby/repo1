@@ -12,7 +12,7 @@
     "clean": "rm -rf www && mkdir www",
     "build": "npm run clean && cp -rf client/ www/client && cp -rf node_modules www/node_modules && cp -rf public/ www/public && cp config.js contacts.js server.js package.json www",
     "zip": "npm run build && cd www && zip -r -D ../app.zip *",
-    "zip2": "zip -r -D ../app1.zip *",
+    "zip2": "zip -r -D ../app2.zip *",
     "deploy": "mv ./.elasticbeanstalk ./www && chmod +x ./bin/deploy.sh && ./bin/deploy.sh"
   }
 }
